@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  display: flex;
+}
+
+.leftblock {
+  background-color: #fdde00;
+  width: 60%;
+  height: 100vh;
+}
+.leftblock__content {
+  width: 90%;
+  padding-top: 15%;
+  padding-left: 22%;
+}
+.leftblock__content h1 {
+  font-size: 54px;
+}
+.leftblock__content_stick {
+  display: flex;
+  width: 90%;
+}
+.leftblock__content_stick h2 {
+  margin: 0;
+  margin-top: -6px;
+  font-size: 75px;
+}
+.leftblock__content_stick h3 {
+  margin: -5px;
+  font-size: 36px;
+}
+.leftblock__content_stick h4 {
+  margin: 10px;
+  font-size: 34px;
+}
+.leftblock__content_stick p {
+  font-size: 20px;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.leftblock__content_stick span {
+  display: block;
+  height: 95px;
+  width: 5px;
+  background-color: black;
+  margin: 15px;
+}
+.leftblock__content_input form input {
+  border: none;
+  width: 175px;
+  padding: 10px;
+  border-radius: 3px;
+  margin-right: 13px;
+  margin-top: 20px;
+}
+.leftblock__content_input form button {
+  cursor: pointer;
+  width: 245px;
+  text-align: right;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.leftblock__content_input form :hover {
+  opacity: 0.95;
+  color: yellow;
+}
+
+.rightblock .phone {
+  margin-left: -135px;
+  margin-top: 10px;
+  z-index: 2;
+}
+.rightblock .IpadPro {
+  position: fixed;
+  width: 500px;
+}
+
+@media (max-width: 660px) {
+  .leftblock {
+    width: 100%;
+    height: 140vh;
+  }
+
+  .leftblock__content h1 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+  }
+}
+@media (max-width: 770px) {
+  .leftblock {
+    width: 100%;
+  }
+
+  .leftblock__content_stick {
+    display: block;
+    text-align: center;
+  }
+  .leftblock__content_stick span {
+    margin: 0 auto;
+    height: 3px;
+    width: 80%;
+    background-color: black;
+  }
+}
+@media (max-width: 900px) {
+  .leftblock {
+    width: 100%;
+    height: 120vh;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  form input {
+    width: 1009px;
+  }
+}
+@media (max-width: 1400px) {
+  .leftblock__content {
+    margin: 13%;
+    padding: 0;
+  }
+}
+@media (max-width: 1500px) {
+  .phone {
+    display: none;
+  }
+}
